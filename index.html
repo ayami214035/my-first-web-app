@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Progate</title>
-  </head>
-  <body>
-    <h1 class="title">HTML & CSS の開発環境を用意しよう！</h1>
-    <p>自分のPCでWebページを開発する方法を学習しましょう</p>
-  </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ポートフォリオサンプル</title>
+  <meta name="description" content="ステージ2向けHTML練習ページ">
+</head>
+
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#skills">スキル</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>自己紹介</h2>
+      <p>
+        Web開発を学習中です。  
+        HTMLの構造を意識してページを作成しています。
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>スキル</h2>
+      <ul>
+        <li>HTML（基礎）</li>
+        <li>CSS（学習中）</li>
+        <li>JavaScript（これから）</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+
+      <form>
+        <div>
+          <label for="name">お名前</label><br>
+          <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+          <label for="email">メールアドレス</label><br>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+          <label for="message">メッセージ</label><br>
+          <textarea id="message" name="message"></textarea>
+        </div>
+
+        <button type="submit">送信</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Portfolio</p>
+  </footer>
+
+</body>
 </html>
